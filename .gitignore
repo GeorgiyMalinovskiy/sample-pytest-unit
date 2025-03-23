@@ -1,2 +1,21 @@
-/venv
+# Python
 __pycache__/
+venv/
+
+# IDE
+.vscode/
+
+# Testing
+.pytest_cache/
+.coverage
+
+# Allure
+target/
+!target/allure-results/
+allure-report/
+allure-results/
+
+# Logs
+*.log
+logs/
+log/
