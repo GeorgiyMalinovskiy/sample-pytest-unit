@@ -2,7 +2,12 @@ import pytest
 
 from ingredient import Ingredient
 
-TEST_DATA = [('Тип', 'Название', '100'), (100, 100, 100)]
+TEST_DATA = [
+    ('Тип', 'Название', '100'),
+    (100, 100, 100),
+    ('Соус', 'Кетчуп', '50'),
+    ('Котлета', 'Говяжья', '200')
+]
 
 @pytest.fixture(params=TEST_DATA)
 def with_ingredient(request):

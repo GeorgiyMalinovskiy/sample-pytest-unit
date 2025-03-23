@@ -2,7 +2,12 @@ import pytest
 
 from bun import Bun
 
-TEST_DATA = [('Булочка', '100'), (100, 100)]
+TEST_DATA = [
+    ('Булочка', '100'),
+    (100, 100),
+    ('Черная булочка', '150'),
+    ('Белая булочка', '120')
+]
 
 @pytest.fixture(params=TEST_DATA)
 def with_bun(request):
